@@ -1,6 +1,6 @@
 # My Project 🚀
 
-This project was developed using **React** and includes several essential libraries:
+This project was developed using **React** and **Express.js** and includes several essential libraries:
 
 - 📦 **Boxicons**: for icons.  
 - 📧 **Nodemailer**: for sending emails.  
