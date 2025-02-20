@@ -1,0 +1,121 @@
+/* Style général de la page */
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #4A90E2, #A8E6CF);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+/* En-tête */
+.user-header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+/* Texte de bienvenue */
+.welcome-text {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/* Carte des informations utilisateur */
+.user-info-card {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.user-info-card h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.user-info-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.user-info-card li {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+/* Image de profil */
+.profile-container {
+  margin-top: 20px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Bouton Retour */
+.return-button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  color: white;
+  background: #ff6f61;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.return-button:hover {
+  background: #e55b50;
+}
+
+.return-button-green {
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  color: white;
+  background: #08e400d0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.box-trash {
+  cursor: pointer;
+}
+
+.link-button {
+  background-color: #48bb78; /* bg-green-500 */
+  color: white;
+  width: 1rem; /* w-10 */
+  height: 1rem; /* h-10 */
+  border-radius: 50%; /* rounded-full */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem; /* text-2xl */
+  transition: background-color 0.3s ease; /* Pour l'animation au survol */
+}
+
+.link-button:hover {
+  background-color: #38a169; /* hover:bg-green-600 */
+}
+
+.link-button i {
+  font-size: 1rem; /* Pour le signe "+" */
+}

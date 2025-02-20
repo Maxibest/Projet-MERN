@@ -1,0 +1,144 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+/* Style du titre à gauche */
+.navbar-left h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #f54f02d2;
+}
+
+/* Place les boutons à droite */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espace entre les boutons */
+  margin-left: auto; /* Pousse vers la droite */
+  color: #f54f02d2;
+}
+
+/* Style des boutons */
+.cta-button {
+  padding: 10px 20px;
+  background-color: #f54f02d2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 250px;
+}
+
+.cta-button:hover {
+  background-color: #f54f02d2;
+}
+
+.users:hover {
+  background-color: rgba(139, 138, 135, 0.386);
+}
+.users {
+  border-radius: 5px;
+  padding:5px;
+  width: 120px;
+  box-sizing: border-box;
+
+}
+
+/* ... (gardez les styles existants) */
+
+.burger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.burger-icon {
+  width: 30px;
+  height: 20px;
+  position: relative;
+}
+
+.burger-icon span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #f54f02d2;
+  border-radius: 3px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.burger-icon span:nth-child(1) {
+  top: 0px;
+}
+
+.burger-icon span:nth-child(2) {
+  top: 8px;
+}
+
+.burger-icon span:nth-child(3) {
+  top: 16px;
+}
+
+.burger-icon.open span:nth-child(1) {
+  top: 8px;
+  transform: rotate(135deg);
+}
+
+.burger-icon.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.burger-icon.open span:nth-child(3) {
+  top: 8px;
+  transform: rotate(-135deg);
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 480px) and (max-width: 720px) {
+  .burger-menu {
+    display: block;
+  }
+
+  .menu-items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 0 0 0 10px;
+  }
+
+  .menu-items.open {
+    display: flex;
+  }
+
+  .navbar-right {
+    flex-direction: column;
+  }
+
+  .cta-button {
+    margin-top: 10px;
+  }
+
+  .navbar-utilisateur {
+    margin-top: 10px;
+  }
+}
+
+
